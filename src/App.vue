@@ -1,15 +1,16 @@
 <script>
+import AppHeader from './components/AppHeader.vue';
+
 export default {
-  data() {
-    return {
-      message: 'Hello world'
-    }
+  name: 'App',
+  components: {
+    AppHeader
   }
 }
 </script>
 
 <template>
-  <h1>{{ message }}</h1>
+  <AppHeader />
 </template>
 
 <style></style>
