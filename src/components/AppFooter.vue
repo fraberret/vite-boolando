@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-    <footer id="site_footer">
+    <footer>
         <div class="footer_contenitor contenitor">
             <div class="copyright">
                 <h3 class="padding-bottom">Boolando s.r.l</h3>

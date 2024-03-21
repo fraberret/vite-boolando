@@ -159,3 +159,26 @@ main {
         left: 0;
     }
 }
+
+footer {
+
+
+    margin-top: 100px;
+    background-color: $zala-dark;
+
+
+    .footer_contenitor {
+
+        height: 100px;
+        color: white;
+    }
+
+    .padding-bottom {
+        padding-bottom: 5px;
+    }
+
+
+    .info {
+        font-size: 12px;
+    }
+}
