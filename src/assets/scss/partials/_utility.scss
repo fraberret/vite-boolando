@@ -1,0 +1,19 @@
+.contenitor {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+ul {
+    display: flex;
+    gap: 0.5rem;
+    list-style: none;
+}
+
+a {
+    color: var(--zala-lighter);
+    text-decoration: none;
+}
