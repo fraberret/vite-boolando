@@ -8,7 +8,7 @@ export default {
 
 <template>
 
-    <header id="site_header">
+    <header>
         <div class="header_contenitor contenitor">
             <div class="gender">
                 <ul>
