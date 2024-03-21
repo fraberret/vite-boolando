@@ -1,3 +1,5 @@
+@use './variables' as *;
+
 .contenitor {
     width: 70%;
     margin: 0 auto;
@@ -14,6 +16,6 @@ ul {
 }
 
 a {
-    color: var(--zala-lighter);
+    color: $zala-lighter;
     text-decoration: none;
 }

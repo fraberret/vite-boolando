@@ -20,4 +20,142 @@ header {
 
 }
 
-main {}
+main {
+    .main_contenitor {
+        flex-wrap: wrap;
+    }
+
+    .item {
+
+        width: 290px;
+        height: 420px;
+        position: relative;
+        background-size: contain;
+        margin-top: 100px;
+        background-repeat: no-repeat;
+    }
+
+    .red_square {
+        background-color: $zala-accent;
+        width: 50px;
+        height: 20px;
+        position: absolute;
+        left: 0;
+        bottom: 30px;
+        color: white;
+        font-size: 14px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .green_square {
+        background-color: $zala-sostenibility;
+        width: 100px;
+        height: 20px;
+        position: absolute;
+        bottom: 30px;
+        left: 55px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+
+    }
+
+    .heart_square {
+        width: 40px;
+        height: 40px;
+        background-color: white;
+        position: absolute;
+        right: 0;
+        top: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    :hover.heart_square {
+        color: $zala-accent;
+    }
+
+    .item_description {
+        position: absolute;
+        top: 100%;
+
+    }
+
+
+
+    .discount_price {
+        color: $zala-accent;
+    }
+
+    .real_price {
+        text-decoration: line-through;
+    }
+
+    .small {
+        font-size: 14px;
+    }
+
+    /* item image */
+    .levis_first {
+
+        background-image: url(/images/1.webp);
+    }
+
+    .guess {
+        background-image: url(/images/2.webp);
+    }
+
+
+    .third_item {
+        background-image: url(/images/3.webp);
+    }
+
+    .levis_forth {
+        background-image: url(/images/4.webp);
+    }
+
+    .long_dress {
+        background-image: url(/images/5.webp);
+    }
+
+    .last_item {
+        background-image: url(/images/6.webp);
+    }
+
+
+    /* hover img */
+    :hover.levis_first {
+        background-image: url(/images/1b.webp);
+    }
+
+    :hover.guess {
+        background-image: url(/images/2b.webp);
+    }
+
+    :hover.third_item {
+        background-image: url(/images/3b.webp);
+    }
+
+    :hover.levis_forth {
+        background-image: url(/images/4b.webp);
+    }
+
+    :hover.long_dress {
+        background-image: url(/images/5b.webp);
+    }
+
+    :hover.last_item {
+        background-image: url(/images/6b.webp);
+    }
+
+    .bottom-left {
+        left: 0;
+    }
+}
