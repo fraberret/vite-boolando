@@ -44,19 +44,4 @@ export default {
 
 </template>
 
-<style>
-#site_header {
-    background-color: var(--zala-primary);
-    position: fixed;
-    color: white;
-    width: 100%;
-    z-index: 1000;
-
-}
-
-.header_contenitor {
-
-    height: 60px;
-
-}
-</style>
+<style></style>
