@@ -1,7 +1,10 @@
-# Vue 3 + Vite
+# Instructions
+Descrizione:
+Create un nuovo progetto utilizzando Vite e Vue 3 e definite i componenti necessari per strutturare il layout.
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Non esagerate con i componenti: less is more.
 
-## Recommended IDE Setup
+L’esercizio già lo conoscete (html-css-boolando), ma la sfida è suddividerlo in componenti e provare a sfruttare SASS :faccia_che_sbircia_tra_le_dita: per rendere il nostro stile più leggibile e flessibile (di quali variabili potreste avere bisogno?).
 
-- [VS Code](https://code.visualstudio.com/) + [Vue - Official](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (previously Volar) and disable Vetur
+Bonus
+Popoliamo le voci dell’header (sia le tre voci testuali che le tre icone) dinamicamente.
