@@ -1,11 +1,17 @@
 <script>
 import CardProducts from './CardProducts.vue'
+import { products } from '../data.js'
 
 export default {
     name: 'AppMain',
     components: {
         CardProducts,
 
+    },
+    data() {
+        return {
+            products
+        }
     }
 }
 </script>
@@ -13,7 +19,7 @@ export default {
 <template>
     <main>
         <div class="main_contenitor contenitor">
-            <CardProducts />
+            <CardProducts :product="product" :key="product.id" v-for="product in products" />
         </div>
     </main>
 </template>

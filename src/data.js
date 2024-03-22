@@ -1,4 +1,3 @@
-<script>
 
 export const products = [
     {
@@ -105,4 +104,4 @@ export const products = [
     }
 ]
 
-</script>
+
