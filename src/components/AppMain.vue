@@ -8,6 +8,8 @@ export default {
     <main id="site_main">
         <div class="main_contenitor contenitor">
             <div class="item levis_first">
+                <img class="first_img" src="/images/1.webp" alt="">
+                <img class="second_img" src="/images/1b.webp" alt="">
                 <div class="heart_square"><i class="fa-solid fa-heart"></i>
                 </div>
                 <div class="red_square">-50%</div>
