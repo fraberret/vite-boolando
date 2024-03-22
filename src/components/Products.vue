@@ -3,8 +3,8 @@
 export const products = [
     {
         "id": 1,
-        "frontImage": "1.webp",
-        "backImage": "1b.webp",
+        "frontImage": "/images/1.webp",
+        "backImage": "/images/1b.webp",
         "brand": "Levi's",
         "name": "Relaxed Fit",
         "price": 29.99,
@@ -22,8 +22,8 @@ export const products = [
     },
     {
         "id": 2,
-        "frontImage": "2.webp",
-        "backImage": "2b.webp",
+        "frontImage": "/images/2.webp",
+        "backImage": "/images/2b.webp",
         "brand": "Guess",
         "name": "Roses Tee",
         "price": 20.99,
@@ -37,8 +37,8 @@ export const products = [
     },
     {
         "id": 3,
-        "frontImage": "3.webp",
-        "backImage": "3b.webp",
+        "frontImage": "/images/3.webp",
+        "backImage": "/images/3b.webp",
         "brand": "Come Zucchero Filato",
         "name": "Voglia di colori pastello",
         "price": 129.99,
@@ -52,8 +52,8 @@ export const products = [
     },
     {
         "id": 4,
-        "frontImage": "4.webp",
-        "backImage": "4b.webp",
+        "frontImage": "/images/4.webp",
+        "backImage": "/images/4b.webp",
         "brand": "Levi's",
         "name": "Tee Unisex",
         "price": 14.99,
@@ -71,8 +71,8 @@ export const products = [
     },
     {
         "id": 5,
-        "frontImage": "5.webp",
-        "backImage": "5b.webp",
+        "frontImage": "/images/5.webp",
+        "backImage": "/images/5b.webp",
         "brand": "Maya Deluxe",
         "name": "Stripe Bodice",
         "price": 99.99,
@@ -90,8 +90,8 @@ export const products = [
     },
     {
         "id": 6,
-        "frontImage": "6.webp",
-        "backImage": "6b.webp",
+        "frontImage": "/images/6.webp",
+        "backImage": "/images/6b.webp",
         "brand": "Esprit",
         "name": "Maglione - Black",
         "price": 29.99,

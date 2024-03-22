@@ -1,9 +1,11 @@
 <script>
 import CardProducts from './CardProducts.vue'
+
 export default {
     name: 'AppMain',
     components: {
-        CardProducts
+        CardProducts,
+
     }
 }
 </script>
