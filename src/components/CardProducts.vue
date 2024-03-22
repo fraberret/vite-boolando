@@ -1,12 +1,16 @@
 <template>
     <div class="item" v-for="product in products">
+
         <img class="first_img" :src="product.frontImage">
         <img class="second_img" :src="product.backImage" alt="">
         <div class="heart_square"><i class="fa-solid fa-heart"></i>
         </div>
-        <div class="badges" v-for="badge in product.badges">
-            <div class="red_square">{{ badge.value }}</div>
-            <div class="green_square">Sostenibilit&aacute;</div>
+        <div class="badges">
+            <span v-for="badge in product.badges"
+                :class="{ 'red_square': badge.type == 'discount', 'green_square': badge.type === 'tag' }">
+                {{ badge.value }}
+            </span>
+
         </div>
 
         <div class="item_description">

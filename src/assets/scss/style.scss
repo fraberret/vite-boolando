@@ -31,37 +31,38 @@ main {
         width: 290px;
         height: 420px;
         position: relative;
-        background-size: contain;
         margin-top: 100px;
-        background-repeat: no-repeat;
+
     }
 
-    .red_square {
-        background-color: $zala-accent;
-        width: 50px;
-        height: 20px;
+
+    .badges {
         position: absolute;
         left: 0;
         bottom: 30px;
+        width: 100%;
+
+
+    }
+
+    .red_square {
+
+        background-color: $zala-accent;
+        padding: 0.25rem;
+        margin-right: 1rem;
+        display: inline-block;
         color: white;
         font-size: 14px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+
 
     }
 
     .green_square {
+
         background-color: $zala-sostenibility;
-        width: 100px;
-        height: 20px;
-        position: absolute;
-        bottom: 30px;
-        left: 55px;
+        padding: 0.25rem;
         color: white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        display: inline-block;
         font-size: 14px;
 
     }
