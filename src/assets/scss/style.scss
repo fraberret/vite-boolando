@@ -12,6 +12,16 @@ header {
     z-index: 1000;
 
 
+    .gender>ul>li :hover {
+        color: black;
+        background-color: rgba(211, 211, 211, 0.509)
+    }
+
+    .gender>ul>li>a {
+        padding: 0.5rem;
+        border-radius: 20%;
+    }
+
     .header_contenitor {
 
         height: 60px;
