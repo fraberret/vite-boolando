@@ -17,7 +17,7 @@
             <p class="brand small">{{ product.brand }}</p>
             <p class="object"><strong>{{ product.name }}</strong></p>
 
-            <span class="discount_price small">{{ discountedPrice
+            <span v-show="discountedPrice" class="discount_price small">{{ discountedPrice
                 }}</span>
             <span :class="{ 'real_price': discountedPrice }" class="small">{{ product.price }}&euro;</span>
 
