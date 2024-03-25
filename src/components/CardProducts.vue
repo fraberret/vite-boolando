@@ -6,7 +6,7 @@
         <div class="heart_square"><i class="fa-solid fa-heart"></i>
         </div>
         <div class="badges">
-            <span v-for="badge in badges"
+            <span v-for="badge in product.badges"
                 :class="{ 'red_square': badge.type == 'discount', 'green_square': badge.type === 'tag' }">
                 {{ badge.value }}
             </span>
@@ -16,7 +16,8 @@
         <div class="item_description">
             <p class="brand small">{{ product.brand }}</p>
             <p class="object"><strong>{{ product.name }}</strong></p>
-            <span class="discount_price small">14,99&euro;</span>
+            <span class="discount_price small">{{ discountedPrice
+                }}&euro;</span>
             <span class="real_price small">{{ product.price }}&euro;</span>
 
         </div>
@@ -30,6 +31,7 @@
 export default {
     name: 'CardProducts',
     props: {
+        id: Number,
         product: Object,
         frontImage: String,
         backImage: String,
@@ -37,6 +39,30 @@ export default {
         brand: String,
         name: String,
         price: Number,
+
+    },
+    data() {
+        return {
+            discountedPrice: 0,
+
+        }
+    },
+
+    mounted() {
+
+        this.product.badges.forEach(element => {
+            /* console.log(element.type); */
+
+            if (element.type == 'discount') {
+                let discount = parseInt(element.value)
+                this.discountedPrice = this.product.price * ((100 + discount) / 100)
+                this.discountedPrice = Number(this.discountedPrice.toFixed(2))
+                console.log(this.discountedPrice);
+            } else {
+                this.discountedPrice = 'Nessuni sconto'
+            }
+
+        });
 
     }
 
