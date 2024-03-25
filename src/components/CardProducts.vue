@@ -16,9 +16,10 @@
         <div class="item_description">
             <p class="brand small">{{ product.brand }}</p>
             <p class="object"><strong>{{ product.name }}</strong></p>
+
             <span class="discount_price small">{{ discountedPrice
-                }}&euro;</span>
-            <span class="real_price small">{{ product.price }}&euro;</span>
+                }}</span>
+            <span :class="{ 'real_price': discountedPrice }" class="small">{{ product.price }}&euro;</span>
 
         </div>
     </div>
@@ -56,10 +57,10 @@ export default {
             if (element.type == 'discount') {
                 let discount = parseInt(element.value)
                 this.discountedPrice = this.product.price * ((100 + discount) / 100)
-                this.discountedPrice = Number(this.discountedPrice.toFixed(2))
+                this.discountedPrice = Number(this.discountedPrice.toFixed(2)) + '€'
                 console.log(this.discountedPrice);
             } else {
-                this.discountedPrice = 'Nessuni sconto'
+                this.discountedPrice = ''
             }
 
         });
