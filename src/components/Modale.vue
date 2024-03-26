@@ -3,7 +3,7 @@
         <div class="modale">
             <div class="top">
                 <h1>title</h1>
-                <button>X</button>
+                <button @close-modal="closeModal">X</button>
 
             </div>
             <hr>
@@ -13,7 +13,19 @@
 
 <script>
 export default {
-    name: 'Modale'
+    name: 'Modale',
+
+    data() {
+        return {
+            showModal: false,
+        }
+    },
+    methods: {
+        closeModal() {
+            this.$emit('close-modal');
+        }
+    }
+
 }
 </script>
 

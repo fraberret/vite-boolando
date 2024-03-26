@@ -15,6 +15,11 @@ export default {
             state
         }
     },
+    methods: {
+        showModal() {
+            this.$emit('show-modal');
+        }
+    },
     mounted() {
         console.log(this.state.message);
         this.state.getProducts(this.state.base_products_api_url)
@@ -25,7 +30,7 @@ export default {
 <template>
     <main>
         <div class="main_contenitor contenitor">
-            <CardProducts :product="product" :key="product.id" v-for="product in state.products" />
+            <CardProducts @click="showModal" :product="product" :key="product.id" v-for="product in state.products" />
         </div>
     </main>
 </template>

@@ -11,15 +11,27 @@ export default {
     AppHeader,
     AppMain,
     AppFooter,
-    Modale
+    Modale,
+
+
+  },
+  data() {
+    return {
+      showModal: false
+    }
+  },
+  methods: {
+    closeModal() {
+      this.showModal = false;
+    }
   }
 }
 </script>
 
 <template>
   <AppHeader />
-  <Modale />
-  <AppMain />
+  <Modale v-if="showModal" @click="closeModal" />
+  <AppMain @show-modal="showModal = true" />
   <AppFooter />
 </template>
 
