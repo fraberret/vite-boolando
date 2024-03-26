@@ -58,7 +58,6 @@ export default {
                 let discount = parseInt(element.value)
                 this.discountedPrice = this.product.price * ((100 + discount) / 100)
                 this.discountedPrice = Number(this.discountedPrice.toFixed(2)) + '€'
-                console.log(this.discountedPrice);
             } else {
                 this.discountedPrice = ''
             }
