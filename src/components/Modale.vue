@@ -1,11 +1,13 @@
 <template>
-    <div class="modale">
-        <div class="top">
-            <h1>title</h1>
-            <button>X</button>
+    <div class="modal_page">
+        <div class="modale">
+            <div class="top">
+                <h1>title</h1>
+                <button>X</button>
 
+            </div>
+            <hr>
         </div>
-        <hr>
     </div>
 </template>
 
@@ -16,13 +18,23 @@ export default {
 </script>
 
 <style>
+.modal_page {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.188);
+    backdrop-filter: blur(8px);
+    z-index: 9999;
+    position: absolute;
+}
+
 .modale {
     background-color: rgb(251, 2, 2);
     width: 500px;
     height: 300px;
     margin: 0 auto;
-    z-index: 9999;
     position: absolute;
+
+
     top: 50%;
     left: 50%;
     margin-top: -150px;
