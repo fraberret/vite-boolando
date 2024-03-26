@@ -16,8 +16,9 @@ export default {
         }
     },
     methods: {
-        showModal() {
+        showModal(product) {
             this.$emit('show-modal');
+            console.log(product);
         }
     },
     mounted() {
@@ -30,7 +31,8 @@ export default {
 <template>
     <main>
         <div class="main_contenitor contenitor">
-            <CardProducts @click="showModal" :product="product" :key="product.id" v-for="product in state.products" />
+            <CardProducts @click="showModal(product)" :product="product" :key="product.id"
+                v-for="product in state.products" />
         </div>
     </main>
 </template>

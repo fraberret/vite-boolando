@@ -12,6 +12,7 @@
 </template>
 
 <script>
+
 export default {
     name: 'Modale',
 
@@ -40,7 +41,7 @@ export default {
 }
 
 .modale {
-    background-color: rgb(251, 2, 2);
+    background-color: rgb(255, 255, 255);
     width: 500px;
     height: 300px;
     margin: 0 auto;
