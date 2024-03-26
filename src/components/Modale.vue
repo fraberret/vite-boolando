@@ -2,7 +2,7 @@
     <div class="modal_page">
         <div class="modale">
             <div class="top">
-                <h1></h1>
+                <h1>{{ selectedProduct.brand }}</h1>
                 <button @close-modal="closeModal">X</button>
 
             </div>
@@ -15,17 +15,22 @@
 
 export default {
     name: 'Modale',
+    props: {
+        selectedProduct: Object // Prop per ricevere il prodotto selezionato
+    },
 
 
     data() {
         return {
-            showModal: false,
+
         }
     },
     methods: {
         closeModal() {
             this.$emit('close-modal');
-        }
+
+        },
+
     },
 
 

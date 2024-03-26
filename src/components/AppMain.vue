@@ -4,6 +4,7 @@ import CardProducts from './CardProducts.vue'
 import { state } from '../state.js'
 
 
+
 export default {
     name: 'AppMain',
     components: {
@@ -18,7 +19,7 @@ export default {
     methods: {
         showModal(product) {
             this.$emit('show-modal', product);
-            console.log(product);
+
         }
     },
     mounted() {

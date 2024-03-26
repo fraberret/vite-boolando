@@ -5,6 +5,8 @@ import AppFooter from './components/AppFooter.vue';
 import Modale from './components/Modale.vue';
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
+
+
 export default {
   name: 'App',
   components: {
@@ -17,15 +19,19 @@ export default {
   },
   data() {
     return {
-      showModal: false
+      showModal: false,
+      selectedProduct: null,
     }
   },
   methods: {
     closeModal() {
       this.showModal = false;
     },
-    bla() {
+    modal(product) {
+
       this.showModal = true
+      this.selectedProduct = product
+      console.log(this.product);
     }
   }
 }
@@ -33,8 +39,8 @@ export default {
 
 <template>
   <AppHeader />
-  <Modale v-if="showModal == true" @click="closeModal" />
-  <AppMain @show-modal="bla" />
+  <Modale v-if="showModal == true" :selectedProduct="selectedProduct" @click="closeModal" />
+  <AppMain @show-modal="modal" />
   <AppFooter />
 </template>
 
