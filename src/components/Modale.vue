@@ -1,12 +1,21 @@
 <template>
     <div class="modal_page">
         <div class="modale">
-            <div class="top">
-                <h1>{{ selectedProduct.brand }}</h1>
-                <button @close-modal="closeModal">X</button>
+
+            <div class="left_side">
+                <div class="left_side">
+                    <img :src="selectedProduct.frontImage" alt="">
+                </div>
+            </div>
+            <div class="right_side">
+                <div class="item">
+                    <h1>{{ selectedProduct.brand }}</h1>
+                    <h3>{{ selectedProduct.name }}</h3>
+
+                </div>
+
 
             </div>
-            <hr>
         </div>
     </div>
 </template>
@@ -49,16 +58,14 @@ export default {
 
 .modale {
     background-color: rgb(255, 255, 255);
-    width: 500px;
-    height: 300px;
+    display: flex;
     margin: 0 auto;
     position: absolute;
-
+    padding: 1rem;
 
     top: 50%;
     left: 50%;
-    margin-top: -150px;
-    margin-left: -250px;
+    transform: translate(-50%, -50%);
 }
 
 .top {
@@ -73,5 +80,9 @@ export default {
     & button:hover {
         cursor: pointer;
     }
+}
+
+.left_side {
+    & img {}
 }
 </style>
