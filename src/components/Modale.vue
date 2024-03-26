@@ -2,7 +2,7 @@
     <div class="modal_page">
         <div class="modale">
             <div class="top">
-                <h1>title</h1>
+                <h1></h1>
                 <button @close-modal="closeModal">X</button>
 
             </div>
@@ -16,6 +16,7 @@
 export default {
     name: 'Modale',
 
+
     data() {
         return {
             showModal: false,
@@ -25,7 +26,8 @@ export default {
         closeModal() {
             this.$emit('close-modal');
         }
-    }
+    },
+
 
 }
 </script>

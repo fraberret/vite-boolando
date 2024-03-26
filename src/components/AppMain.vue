@@ -17,7 +17,7 @@ export default {
     },
     methods: {
         showModal(product) {
-            this.$emit('show-modal');
+            this.$emit('show-modal', product);
             console.log(product);
         }
     },
