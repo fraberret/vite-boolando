@@ -23,6 +23,9 @@ export default {
   methods: {
     closeModal() {
       this.showModal = false;
+    },
+    bla() {
+      this.showModal = true
     }
   }
 }
@@ -30,8 +33,8 @@ export default {
 
 <template>
   <AppHeader />
-  <Modale v-if="showModal" @click="closeModal" />
-  <AppMain @show-modal="showModal = true" />
+  <Modale v-if="showModal == true" @click="closeModal" />
+  <AppMain @show-modal="bla" />
   <AppFooter />
 </template>
 
